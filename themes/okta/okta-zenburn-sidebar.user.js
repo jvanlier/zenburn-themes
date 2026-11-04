@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Okta Zenburn — sidebar support
 // @namespace    local.okta.zenburn
-// @version      1.1.2
+// @version      1.1.3
 // @description  Applies the companion Stylus theme inside Okta's open shadow roots.
 // @match        https://*.okta.com/app/UserHome*
 // @run-at       document-idle

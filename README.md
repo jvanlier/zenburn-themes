@@ -6,9 +6,10 @@ Each website has its own folder under `themes/`. Themes use [Stylus](https://add
 
 ## Themes
 
-| Website        | Stylus theme                             | Companion userscript                                           |
-|----------------|------------------------------------------|----------------------------------------------------------------|
-| Okta dashboard | [CSS](themes/okta/okta-zenburn.user.css) | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) |
+| Website        | Stylus theme                                           | Companion userscript                                           |
+|----------------|--------------------------------------------------------|----------------------------------------------------------------|
+| Okta dashboard | [CSS](themes/okta/okta-zenburn.user.css)               | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) |
+| Hacker News    | [CSS](themes/hacker-news/hacker-news-zenburn.user.css) | —                                                              |
 
 ## Install
 

@@ -8,6 +8,7 @@ Each website has its own folder under `themes/`. Themes use [Stylus](https://add
 
 | Website                               | Stylus theme                        | Companion userscript                                           | README                                 |
 |---------------------------------------|-------------------------------------|----------------------------------------------------------------|----------------------------------------|
+| [AWS login](GALLERY.md#aws-login)     | [CSS](themes/aws-login/theme.css)   | —                                                              | [README](themes/aws-login/README.md)   |
 | [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/theme.css) | —                                                              | [README](themes/hacker-news/README.md) |
 | [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/theme.css)        | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) | [README](themes/okta/README.md)        |
 

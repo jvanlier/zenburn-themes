@@ -6,10 +6,10 @@ Each website has its own folder under `themes/`. Themes use [Stylus](https://add
 
 ## Themes
 
-| Website                               | Stylus theme                                           | Companion userscript                                           | README                          |
-|---------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|---------------------------------|
-| [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/okta-zenburn.user.css)               | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) | [README](themes/okta/README.md) |
-| [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/hacker-news-zenburn.user.css) | —                                                              | —                               |
+| Website                               | Stylus theme                        | Companion userscript                                           | README                                 |
+|---------------------------------------|-------------------------------------|----------------------------------------------------------------|----------------------------------------|
+| [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/theme.css) | —                                                              | [README](themes/hacker-news/README.md) |
+| [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/theme.css)        | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) | [README](themes/okta/README.md)        |
 
 See the [screenshot gallery](GALLERY.md) for previews.
 
@@ -18,7 +18,7 @@ See the [screenshot gallery](GALLERY.md) for previews.
 ### CSS → Stylus
 
 1. Install Stylus in your browser.
-2. Open the website's `.user.css` file from this repository and copy its contents.
+2. Open the website's `theme.css` file from this repository and copy its contents.
 3. Create a new style in Stylus, paste the CSS, and save. The file includes its URL scope.
 
 ### JavaScript → Violentmonkey
@@ -30,13 +30,13 @@ For a theme with a companion `.user.js` file:
 3. Replace the sample code with the contents of the `.user.js` file and save.
 4. Keep the Stylus theme enabled and reload the website.
 
-**Paste `.user.css` into Stylus and `.user.js` into your userscript manager.**
+**Paste `theme.css` into Stylus and `.user.js` into your userscript manager.**
 
 To update, replace the code in the corresponding extension with the latest file, save, and reload the website.
 
 ## Add a website
 
-Create `themes/<website>/<website>-zenburn.user.css`. Add a companion `.user.js` only when CSS cannot reach the relevant elements, and add the theme to the table above.
+Create `themes/<website>/theme.css`, a README, and a screenshot. Add a companion `.user.js` only when CSS cannot reach the relevant elements, and add the theme to the table above and the screenshot gallery.
 
 - Scope each file to the website and paths it supports.
 - Use the existing Okta theme's palette as a starting point.

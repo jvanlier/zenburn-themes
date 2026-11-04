@@ -1,0 +1,281 @@
+/* ==UserStyle==
+@name           Okta — Zenburn
+@namespace      local.okta.zenburn
+@version        1.1.2
+@description    Warm charcoal, cream text, and muted Zenburn accents for Okta dashboards.
+@author         Local
+==/UserStyle== */
+
+@-moz-document regexp("^https://([a-z0-9-]+[.])*okta[.]com/app/UserHome.*") {
+  :root {
+    color-scheme: dark !important;
+    --zb-bg: #3f3f3f;
+    --zb-panel: #303030;
+    --zb-card: #494949;
+    --zb-hover: #53534b;
+    --zb-border: #858575;
+    --zb-fg: #eeeeDE;
+    --zb-muted: #c0c0ae;
+    --zb-green: #afc49f;
+    --zb-blue: #9fc5c5;
+    --zb-yellow: #f0dfaf;
+    --zb-red: #dca3a3;
+    --zb-selected: #505b4b;
+  }
+
+  html, body, #root, .enduser-app, .content-frame,
+  .enduser-app .main-container, .dashboard--main,
+  .dashboard--footer, [data-unified-ui-shell] {
+    background-color: var(--zb-bg) !important;
+    color: var(--zb-fg) !important;
+  }
+
+  *, *::before, *::after {
+    border-color: var(--zb-border) !important;
+    scrollbar-color: var(--zb-border) var(--zb-bg);
+  }
+
+  ::selection {
+    background: var(--zb-selected) !important;
+    color: var(--zb-yellow) !important;
+  }
+
+  h1, h2, h3, h4, h5, h6, label,
+  .MuiTypography-root, .MuiFormLabel-root,
+  .MuiInputBase-root, .MuiListItemText-root,
+  .dashboard--my-apps-title, .chiclet, .chiclet:visited,
+  .chiclet--footer, .app-row--app-label, .app-row--app-status,
+  .dropdown-menu--button-header, .dropdown-menu--button-sub,
+  .notifications--drawer-header-label, .preferences--drawer,
+  .preferences--drawer-header-label, .app-settings--drawer,
+  .layout-panel, .layout-panel--header, .recently-used,
+  .recently-used--header, .side-nav--footer .support-text {
+    color: var(--zb-fg) !important;
+  }
+
+  a, a:visited, .MuiLink-root {
+    color: var(--zb-blue) !important;
+  }
+
+  a:hover, .MuiLink-root:hover {
+    color: var(--zb-yellow) !important;
+  }
+
+  .legalese, [class*="legalese__"], .MuiTypography-colorTextSecondary,
+  .MuiFormHelperText-root, .app-settings-non-edit--header,
+  .user-details--email {
+    color: var(--zb-muted) !important;
+  }
+
+  [slot="side-nav-footer"], [slot="side-nav-footer"] * {
+    color: var(--zb-muted) !important;
+  }
+
+  .side-nav--footer .support-text a:hover {
+    color: var(--zb-yellow) !important;
+  }
+
+  /* Navigation and header. The companion script handles Okta's shadow DOM. */
+  .side-nav, .side-nav--container, .header--org-logo, .MuiDrawer-paper {
+    background: var(--zb-panel) !important;
+    color: var(--zb-fg) !important;
+  }
+
+  .floating-header, .dashboard--header, .MuiAppBar-root,
+  [slot="top-nav-left-side"], [slot="top-nav-right-side"],
+  [slot="top-nav-left-side"] > *, [slot="top-nav-right-side"] > *,
+  [data-unified-ui-shell] > [data-odyssey-react-web-component] {
+    background: var(--zb-bg) !important;
+    color: var(--zb-fg) !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .nav-item--primary-label, .nav-item--secondary-label,
+  .nav-item--primary-icon, .nav-item--secondary-icon,
+  .side-nav--tabs-add-section, .MuiListItemIcon-root,
+  .MuiSvgIcon-root, .MuiIconButton-root {
+    color: var(--zb-fg) !important;
+  }
+
+  .nav-item--primary-icon, .nav-item--primary-icon path,
+  .side-nav--tabs-add-section-icon, .side-nav--tabs-add-section-icon path {
+    color: var(--zb-fg) !important;
+    fill: currentColor !important;
+  }
+
+  .nav-item--primary:hover, .nav-item--secondary:hover,
+  .side-nav--tabs-add-section:hover,
+  .MuiListItemButton-root:hover, .MuiMenuItem-root:hover {
+    background-color: var(--zb-hover) !important;
+  }
+
+  .nav-item--primary.is-active, .nav-item--secondary.is-active,
+  .MuiListItemButton-root.Mui-selected,
+  .MuiMenuItem-root.Mui-selected, [aria-current="page"] {
+    background-color: var(--zb-selected) !important;
+    color: var(--zb-green) !important;
+  }
+
+  .MuiBadge-badge, .nav-item--info {
+    background: var(--zb-hover) !important;
+    color: var(--zb-yellow) !important;
+  }
+
+  /* App cards. Target the title itself: Okta gives it an explicit dark color. */
+  .chiclet--container, .MuiCard-root {
+    background: var(--zb-card) !important;
+    color: var(--zb-fg) !important;
+    box-shadow: 0 2px 6px #0003, inset 0 0 0 1px #dcdccc14 !important;
+  }
+
+  .chiclet--container:hover, .MuiCard-root:hover {
+    background: var(--zb-hover) !important;
+    box-shadow: 0 4px 14px #0004, inset 0 0 0 1px var(--zb-green) !important;
+  }
+
+  .chiclet, .chiclet:hover, .chiclet:visited,
+  [data-se="app-card-title"], .chiclet--footer .no-translate {
+    color: var(--zb-fg) !important;
+  }
+
+  /* A cream backing keeps dark and transparent logos readable. */
+  .chiclet--main .app-logo--image {
+    background-color: #e5e5d5 !important;
+    padding: 6px !important;
+    border-radius: 4px !important;
+    box-sizing: content-box !important;
+    max-width: calc(100% - 12px) !important;
+  }
+
+  [data-se="section-toggle"] svg path,
+  [data-se="section-rename"] svg path,
+  .dropdown-menu--button svg path {
+    fill: var(--zb-fg) !important;
+  }
+
+  [data-se="section-toggle"] svg circle {
+    stroke: var(--zb-fg) !important;
+  }
+
+  .chiclet--container.is-selected::after {
+    background: var(--zb-green) !important;
+  }
+
+  .chiclet--action {
+    background: transparent !important;
+  }
+
+  .chiclet--action:hover:not(.is-locked) {
+    background: var(--zb-selected) !important;
+  }
+
+  .chiclet--action-kebab, .chiclet--action circle {
+    fill: var(--zb-muted) !important;
+  }
+
+  .app-logo--wrapper {
+    background: #dcdccc !important;
+  }
+
+  [role="grid"], .dashboard-expander-row--container {
+    background-color: var(--zb-bg) !important;
+  }
+
+  /* Search, forms, menus, and drawers. */
+  input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+  textarea, select, .search--input, [class*="search--input__"],
+  .MuiInputBase-root, .custom-select--options-container {
+    background-color: var(--zb-panel) !important;
+    color: var(--zb-fg) !important;
+    caret-color: var(--zb-yellow) !important;
+    box-shadow: none !important;
+  }
+
+  input::placeholder, textarea::placeholder {
+    color: var(--zb-muted) !important;
+    opacity: 1 !important;
+  }
+
+  input[type="checkbox"], input[type="radio"] {
+    accent-color: var(--zb-green) !important;
+  }
+
+  .MuiPaper-root, .search-dropdown, [class*="search-dropdown__"],
+  .dropdown-menu--container, .notifications--drawer, .drawer,
+  .custom-select--dropdown-container, .plugin-banner, .section-banner {
+    background: var(--zb-panel) !important;
+    color: var(--zb-fg) !important;
+    box-shadow: 0 6px 20px #0003 !important;
+  }
+
+  .app-row--app:hover, .app-row--app:hover + .app-row--app-settings,
+  .app-row--app-list-item.app-row--is-focused,
+  .dropdown-menu--button:hover, .topbar--item:hover,
+  .custom-select--menu-list-item:hover {
+    background: var(--zb-hover) !important;
+    color: var(--zb-fg) !important;
+  }
+
+  button, .MuiButton-root, .ods-button {
+    color: var(--zb-fg) !important;
+  }
+
+  .MuiButton-outlined, .MuiButton-contained,
+  .ods-button:not([data-type]), .sort-apps-layout--preference-icon,
+  .sort-apps-layout--grid-list-icons-container {
+    background-color: var(--zb-panel) !important;
+    color: var(--zb-green) !important;
+  }
+
+  .MuiButton-root:hover, .MuiIconButton-root:hover,
+  .ods-button:hover {
+    background-color: var(--zb-hover) !important;
+  }
+
+  .MuiButton-containedPrimary, .ods-button[data-type="primary"] {
+    background: var(--zb-green) !important;
+    color: #2b2b2b !important;
+  }
+
+  .MuiButton-containedPrimary:hover, .ods-button[data-type="primary"]:hover {
+    background: #c0d0b0 !important;
+    color: #2b2b2b !important;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--zb-yellow) !important;
+    outline-offset: 3px !important;
+  }
+
+  .search:focus-within .search--input,
+  .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--zb-green) !important;
+    box-shadow: 0 0 0 2px #afc49f40 !important;
+  }
+
+  [aria-invalid="true"], input[data-invalid], .Mui-error {
+    border-color: var(--zb-red) !important;
+    color: var(--zb-red) !important;
+  }
+
+  .Mui-disabled, button:disabled {
+    color: var(--zb-muted) !important;
+    opacity: 0.65 !important;
+  }
+
+  .MuiAlert-root, .info-banner {
+    background: #394747 !important;
+    color: var(--zb-fg) !important;
+  }
+
+  .MuiAlert-standardError, .MuiAlert-filledError {
+    background: #563f3f !important;
+    color: #efd3d3 !important;
+  }
+
+  .MuiAlert-standardSuccess, .MuiAlert-filledSuccess {
+    background: #3e4b3b !important;
+    color: #d5e3c9 !important;
+  }
+}

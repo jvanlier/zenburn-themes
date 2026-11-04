@@ -6,10 +6,10 @@ Each website has its own folder under `themes/`. Themes use [Stylus](https://add
 
 ## Themes
 
-| Website                               | Stylus theme                                           | Companion userscript                                           |
-|---------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|
-| [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/okta-zenburn.user.css)               | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) |
-| [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/hacker-news-zenburn.user.css) | —                                                              |
+| Website                               | Stylus theme                                           | Companion userscript                                           | README                          |
+|---------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|---------------------------------|
+| [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/okta-zenburn.user.css)               | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) | [README](themes/okta/README.md) |
+| [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/hacker-news-zenburn.user.css) | —                                                              | —                               |
 
 See the [screenshot gallery](GALLERY.md) for previews.
 
@@ -33,10 +33,6 @@ For a theme with a companion `.user.js` file:
 **Paste `.user.css` into Stylus and `.user.js` into your userscript manager.**
 
 To update, replace the code in the corresponding extension with the latest file, save, and reload the website.
-
-## Okta
-
-See the [Okta theme instructions](themes/okta/README.md) for details about its companion script and supported URLs.
 
 ## Add a website
 

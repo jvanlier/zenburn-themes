@@ -1,0 +1,82 @@
+/* ==UserStyle==
+@name           Palo Alto Networks GlobalProtect — Zenburn
+@namespace      local.globalprotect.zenburn
+@version        1.0.0
+@description    Zenburn dark theme for GlobalProtect authentication pages.
+@author         Jori van Lier
+==/UserStyle== */
+
+/* Replace vpn.REDACTED.com with your portal hostname locally in Stylus. */
+@-moz-document url-prefix("https://vpn.REDACTED.com/") {
+  :root {
+    color-scheme: dark !important;
+  }
+
+  html, body {
+    background: #3f3f3f !important;
+    color: #eeeeDE !important;
+  }
+
+  .panel, #content {
+    background: #303030 !important;
+    color: #eeeeDE !important;
+    border: 1px solid #858575 !important;
+    box-shadow: 0 4px 16px #0004 !important;
+  }
+
+  .panel .message-info, .footer {
+    color: #c0c0ae !important;
+  }
+
+  .panel .message-custom, .panel .message-action,
+  .panel .message-action-link {
+    color: #eeeeDE !important;
+  }
+
+  .panel .message-info-failed, #dError1,
+  #login_form h3, #login_form h3 * {
+    color: #dca3a3 !important;
+  }
+
+  a, a:visited, #content h1, #content b {
+    color: #9fc5c5 !important;
+  }
+
+  a:hover {
+    color: #f0dfaf !important;
+  }
+
+  .button-parent a {
+    background: #505b4b !important;
+    color: #eeeeDE !important;
+    border: 1px solid #afc49f !important;
+  }
+
+  .button-parent a:hover {
+    background: #53534b !important;
+    color: #f0dfaf !important;
+  }
+
+  a:focus-visible {
+    outline: 2px solid #f0dfaf !important;
+    outline-offset: 4px !important;
+  }
+
+  .footer {
+    background: #303030 !important;
+  }
+
+  .footer hr {
+    border-color: #858575 !important;
+    opacity: 1 !important;
+  }
+
+  .primary-logo, .footer .logo {
+    filter: brightness(0) invert(0.87) sepia(0.15) !important;
+  }
+
+  ::selection {
+    background: #505b4b !important;
+    color: #f0dfaf !important;
+  }
+}

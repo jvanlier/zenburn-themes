@@ -11,3 +11,7 @@
 ## Okta
 
 ![Okta dashboard with the Zenburn theme](themes/okta/screenshot.png)
+
+## Palo Alto Networks GlobalProtect
+
+![GlobalProtect with the Zenburn theme](themes/globalprotect/screenshot.png)

@@ -6,9 +6,12 @@ Each website has its own folder under `themes/`. Themes use [Stylus](https://add
 
 ## Themes
 
-| Website        | Stylus theme                             | Companion userscript                                           |
-|----------------|------------------------------------------|----------------------------------------------------------------|
-| Okta dashboard | [CSS](themes/okta/okta-zenburn.user.css) | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) |
+| Website                               | Stylus theme                                           | Companion userscript                                           |
+|---------------------------------------|--------------------------------------------------------|----------------------------------------------------------------|
+| [Okta dashboard](GALLERY.md#okta)     | [CSS](themes/okta/okta-zenburn.user.css)               | [Sidebar and header](themes/okta/okta-zenburn-sidebar.user.js) |
+| [Hacker News](GALLERY.md#hacker-news) | [CSS](themes/hacker-news/hacker-news-zenburn.user.css) | —                                                              |
+
+See the [screenshot gallery](GALLERY.md) for previews.
 
 ## Install
 
@@ -32,8 +35,6 @@ For a theme with a companion `.user.js` file:
 To update, replace the code in the corresponding extension with the latest file, save, and reload the website.
 
 ## Okta
-
-![Okta dashboard with the Zenburn theme](themes/okta/screenshot.png)
 
 The theme supports Okta dashboards at `https://*.okta.com/app/UserHome`.
 

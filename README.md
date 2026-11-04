@@ -46,10 +46,10 @@ Create `themes/<website>/<website>-zenburn.user.css`. Add a companion `.user.js`
 
 ## Checks
 
-With Node.js and [just](https://just.systems/) installed, run:
+With Node.js, [prek](https://prek.j178.dev/), and [just](https://just.systems/) installed, run:
 
 ```sh
 just check
 ```
 
-This checks the Okta userscript's JavaScript syntax. Visual checks happen in the browser.
+Run `prek install` to also check staged files before each commit. The checks cover file hygiene, YAML, CSS, and JavaScript syntax. Visual checks happen in the browser.

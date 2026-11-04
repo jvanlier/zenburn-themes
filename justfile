@@ -1,3 +1,3 @@
-# Check the companion userscript's JavaScript syntax.
+# Run all pre-commit checks.
 check:
-    node --check themes/okta/okta-zenburn-sidebar.user.js
+    prek run --all-files

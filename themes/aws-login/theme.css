@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           AWS login — Zenburn
 @namespace      local.aws-login.zenburn
-@version        1.0.0
+@version        1.0.5
 @description    Zenburn dark theme for AWS login.
 @author         Jori van Lier
 ==/UserStyle== */
 
-@-moz-document regexp("https://[^/]+\\.awsapps\\.com/start/.*") {
+@-moz-document regexp("https://[^/]+\\.awsapps\\.com/start/(#/device([?].*)?|(#/)?[?]([^&]*&)*(clientId|callback_url)=[^&]+(&.*)?)$") {
   html {
     background-color: #fff !important;
     color-scheme: light !important;

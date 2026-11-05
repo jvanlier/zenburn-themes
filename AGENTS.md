@@ -8,6 +8,8 @@ Themes live in `themes/<name>`. In this dir, the minimal contents are:
 
 If more files are needed, e.g. JavaScript, add them following existing conventions.
 
+After updating a theme, instruct the user to run `cat themes/<name>/theme.css|pbcopy`, paste it into Stylus, and try it.
+
 Screenshots should also be displayed in `GALLERY.md`; keep the headings alphabetically ordered.
 
 In `README.md`, add the template to the table, again alphabetically ordered.
